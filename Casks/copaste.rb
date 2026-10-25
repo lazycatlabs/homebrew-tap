@@ -1,6 +1,6 @@
 cask "copaste" do
-  version "0.2.0"
-  sha256 "56fdeacd9de3a8caf51df51bd5285f4841fbce3a3cc62e393643695fb9fe880b"
+  version "0.2.1"
+  sha256 "e0f50c703743476339fa87971e80f424e02335d60e4f9109cc066c4ce4cf7964"
 
   url "https://github.com/lazycatlabs/copaste/releases/download/v#{version}/Copaste-#{version}.zip"
   name "Copaste"
