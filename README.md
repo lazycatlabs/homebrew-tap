@@ -5,13 +5,13 @@ brew install --cask lazycatlabs/tap/trackpad-rotator
 ```
 
 ```bash
-brew install --cask lazycatlabs/tap/copaste
+brew install --cask lazycatlabs/tap/recopy
 ```
 
 | Cask | App |
 | --- | --- |
 | `trackpad-rotator` | [Trackpad Rotator](https://github.com/lazycatlabs/trackpad_rotator): use a Magic Trackpad turned 90°, 180° or 270° |
-| `copaste` | [Copaste](https://github.com/lazycatlabs/copaste): clipboard history for text, links, colours, images and files |
+| `recopy` | [ReCopy](https://github.com/lazycatlabs/recopy): clipboard history for text, links, colours, images and files |
 
 ## Updating a cask
 
