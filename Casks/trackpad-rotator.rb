@@ -1,6 +1,6 @@
 cask "trackpad-rotator" do
-  version "1.3.0"
-  sha256 "f5ae61efff447f8993baf09349d5129e7d912a9909e28619f322a33a6c48b700"
+  version "1.4.0"
+  sha256 "2c2da8764f50a040a61c476ba4af3f233e95851667ad4a91430e85f35ad77b00"
 
   url "https://github.com/lazycatlabs/trackpad_rotator/releases/download/v#{version}/TrackpadRotator-#{version}.zip"
   name "Trackpad Rotator"
@@ -16,19 +16,20 @@ cask "trackpad-rotator" do
 
   app "Trackpad Rotator.app"
 
-  uninstall quit: "lazycatlabs.trackpadrotator"
+  uninstall quit: "com.lazycatlabs.trackpadrotator"
 
   zap trash: [
+    "~/Library/Preferences/com.lazycatlabs.trackpadrotator.plist",
     "~/Library/Preferences/lazycatlabs.trackpadrotator.plist",
     "~/Library/Preferences/local.trackpadrotator.plist",
   ]
 
   caveats <<~EOS
-    Trackpad Rotator is not notarized yet, so macOS blocks the first launch.
-    Open it once, then go to System Settings → Privacy & Security and click
-    "Open Anyway".
+    Trackpad Rotator needs Accessibility and Input Monitoring permission,
+    which it asks for on first launch.
 
-    It also needs Accessibility and Input Monitoring permission, which it
-    asks for on first launch.
+    Upgrading from 1.3.0 or earlier: the bundle identifier changed, so grant
+    both permissions again and remove the old Trackpad Rotator entries in
+    System Settings → Privacy & Security. Your settings carry over.
   EOS
 end
