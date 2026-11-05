@@ -1,6 +1,6 @@
 cask "trackpad-rotator" do
-  version "1.4.0"
-  sha256 "2c2da8764f50a040a61c476ba4af3f233e95851667ad4a91430e85f35ad77b00"
+  version "1.5.0"
+  sha256 "04b42f9015c4ebfb1ac07298d475bc940bfbc85b1b408e9063e7b3c57d195fb4"
 
   url "https://github.com/lazycatlabs/trackpad_rotator/releases/download/v#{version}/TrackpadRotator-#{version}.zip"
   name "Trackpad Rotator"
