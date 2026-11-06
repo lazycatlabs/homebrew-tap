@@ -1,6 +1,6 @@
 cask "recopy" do
-  version "0.11.1"
-  sha256 "92d2553063e1a0248bb18959e35cc424c2280d18bcc9ebd799664248a08e173e"
+  version "0.11.2"
+  sha256 "171669b6768aabe68455fbeb12479ff1a27d02a9da7706dd143ff5290f76e631"
 
   url "https://github.com/lazycatlabs/recopy/releases/download/v#{version}/ReCopy-#{version}.zip"
   name "ReCopy"
@@ -21,10 +21,6 @@ cask "recopy" do
   zap trash: "~/Library/Preferences/com.lazycatlabs.recopy.plist"
 
   caveats <<~EOS
-    ReCopy is not notarized yet, so macOS blocks the first launch.
-    Open it once, then go to System Settings → Privacy & Security and click
-    "Open Anyway".
-
     To paste straight into other apps it needs Accessibility permission,
     which it asks for the first time you paste.
   EOS
