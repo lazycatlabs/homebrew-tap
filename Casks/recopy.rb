@@ -1,6 +1,6 @@
 cask "recopy" do
-  version "0.11.2"
-  sha256 "171669b6768aabe68455fbeb12479ff1a27d02a9da7706dd143ff5290f76e631"
+  version "0.12.0"
+  sha256 "2c267a3a84daf6e9752246cd3f6792947172315c842bfa898620aec626cacb72"
 
   url "https://github.com/lazycatlabs/recopy/releases/download/v#{version}/ReCopy-#{version}.zip"
   name "ReCopy"
